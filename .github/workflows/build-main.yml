@@ -32,11 +32,11 @@ jobs:
               if: steps.cache-yarn.outputs.cache-hit != 'true'
               run: yarn install
 
-            # # Prettier formatting
-            # - name: "Prettier"
-            #   run: yarn prettier:verify
+            # Prettier formatting
+            - name: "Prettier"
+              run: yarn prettier:verify
 
-            # # Markdown and JavaScript linting
+            # Markdown and JavaScript linting
             # - name: "Linting"
             #   run: yarn lint
 
